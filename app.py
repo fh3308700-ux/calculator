@@ -150,4 +150,4 @@ calculator_html = r"""
 """
 
 # Display the HTML in Streamlit with enough height to fit the full calculator
-st.components.v1.html(calculator_html, height=500)
+st.components.v1.html(calculator_html, height=600)
