@@ -13,7 +13,7 @@ calculator_html = r"""
       height: 100%;
       margin: 0;
       padding: 0;
-      background-color: #ffd700;
+     
       font-family: Arial, sans-serif;
       display: flex;
       justify-content: center;
