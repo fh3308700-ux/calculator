@@ -2,21 +2,22 @@ import streamlit as st
 
 st.set_page_config(page_title="Calculator", layout="centered")
 
-
+calculator_html = r"""
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Calculator</title>
   <style>
-    body {
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
       background-color: #ffd700;
+      font-family: Arial, sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      margin: 0;
-      font-family: Arial, sans-serif;
     }
 
     .calculator {
@@ -38,6 +39,7 @@ st.set_page_config(page_title="Calculator", layout="centered")
       position: relative;
       height: 60px;
       overflow: hidden;
+      border-radius: 5px;
     }
 
     .expression {
@@ -69,6 +71,7 @@ st.set_page_config(page_title="Calculator", layout="centered")
       background: white;
       border: 2px solid black;
       cursor: pointer;
+      border-radius: 5px;
     }
 
     .buttons button:active {
@@ -144,5 +147,7 @@ st.set_page_config(page_title="Calculator", layout="centered")
   </script>
 </body>
 </html>
-st.components.v1.html(calculator_html, height=700)
+"""
 
+# Display the HTML in Streamlit with enough height to fit the full calculator
+st.components.v1.html(calculator_html, height=700)
