@@ -146,4 +146,3 @@ st.set_page_config(page_title="Calculator", layout="centered")
 </html>
 st.components.v1.html(calculator_html, height=700)
 
-st.components.v1.html(calculator_html, height=600)
