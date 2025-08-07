@@ -26,7 +26,7 @@ calculator_html = r"""
       border-radius: 10px;
       display: grid;
       grid-template-rows: auto 1fr;
-      width: 300px;
+      width: 100%;
     }
 
     .display {
